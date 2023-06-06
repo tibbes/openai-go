@@ -36,7 +36,7 @@ func NewClient(session *openai.Session, model string) *Client {
 type CreateParams struct {
 	Model string `json:"model,omitempty"`
 
-	Prompt []string `json:"prompt,omitempty"`
+	Prompt string   `json:"prompt,omitempty"`
 	Stop   []string `json:"stop,omitempty"`
 	Suffix string   `json:"suffix,omitempty"`
 	Stream bool     `json:"stream,omitempty"`

@@ -17,7 +17,7 @@ func main() {
 	resp, err := client.Create(ctx, &completion.CreateParams{
 		N:         1,
 		MaxTokens: 200,
-		Prompt:    []string{"say this is a test"},
+		Prompt:    "say this is a test",
 	})
 	if err != nil {
 		log.Fatalf("Failed to complete: %v", err)
